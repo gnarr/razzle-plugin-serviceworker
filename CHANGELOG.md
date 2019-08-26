@@ -8,3 +8,4 @@
 - Added README.md.
 - Added CHANGELOG.md.
 - Added linting using eslint.
+- Added travis build config.
