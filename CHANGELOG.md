@@ -1,5 +1,7 @@
 # Changelog
 
+## 1.0.3
+- Updated keywords in package.json.
 ## 1.0.2
 - Updated plugin to allow for default options from razzle.config.js.
 - Updated README.md.
