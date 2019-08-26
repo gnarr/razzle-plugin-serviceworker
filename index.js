@@ -1,10 +1,10 @@
 "use strict";
 const OfflinePlugin = require("offline-plugin");
 
-module.exports = function modify(config, env) {
+module.exports = function modify(config, env, webpack, options) {
   const { target } = env;
   if (target === "web") {
-    const offlineOptions = {
+    const defaultOptions = {
       externals: ["/"],
       publicPath: "/",
       ServiceWorker: {
@@ -15,7 +15,10 @@ module.exports = function modify(config, env) {
       autoUpdate: true,
       safeToUseOptionalCaches: true
     };
-    config.plugins = [...config.plugins, new OfflinePlugin(offlineOptions)];
+    config.plugins = [
+      ...config.plugins,
+      new OfflinePlugin(Object.assign({}, defaultOptions, options))
+    ];
   }
   return config;
 };

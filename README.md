@@ -23,6 +23,7 @@ A serviceworker for Razzle using offline-plugin.
 ### Node.js
 
     $ npm install razzle-plugin-serviceworker --save-dev
+    $ npm install offline-plugin --save
 
 ## Configuration
 
@@ -32,6 +33,29 @@ Edit or create `razzle.config.js` in your project root.
 // razzle.config.js
 module.exports = {
   plugins: ['serviceworker'],
+};
+```
+
+## Add serviceWorker to client
+
+Add to `src/client.js`
+
+```
+import * as OfflinePluginRuntime from "offline-plugin/runtime";
+OfflinePluginRuntime.install();
+```
+
+## Adding server side webpack plugin options
+
+```
+// razzle.config.js
+module.exports = {
+  plugins: [{
+      name:'serviceworker',
+      options: {
+          autoUpdate: true
+      }
+  }],
 };
 ```
 
