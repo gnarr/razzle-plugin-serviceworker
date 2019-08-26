@@ -1,5 +1,7 @@
 # Changelog
 
+## 1.0.1
+- Fixed error in README.md.
 ## 1.0.0
 - Implemented logic that modifies config for web targets with offline-plugin.
 - Added ISC license.
