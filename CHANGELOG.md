@@ -1,5 +1,8 @@
 # Changelog
 
+## 1.0.2
+- Updated plugin to allow for default options from razzle.config.js.
+- Updated README.md.
 ## 1.0.1
 - Fixed error in README.md.
 ## 1.0.0
