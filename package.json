@@ -1,0 +1,40 @@
+{
+  "name": "razzle-plugin-serviceworker",
+  "version": "1.0.0",
+  "description": "A serviceworker for Razzle using offline-plugin.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --forceExit --detectOpenHandles",
+    "lint": "eslint . --ext .js --ignore-pattern node_modules/",
+    "coveralls": "jest --forceExit --detectOpenHandles --coverage && cat ./coverage/lcov.info | coveralls"
+  },
+  "files": [
+    "index.js"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gnarr/razzle-plugin-serviceworker.git"
+  },
+  "keywords": [
+    "razzle",
+    "offline",
+    "serviceworker",
+    "service-worker"
+  ],
+  "author": "Gunnar Cortes Heimisson <gnarr.c@gmail.com> (https://twitter.com/xgnarrx)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gnarr/razzle-plugin-serviceworker/issues"
+  },
+  "homepage": "https://github.com/gnarr/razzle-plugin-serviceworker#readme",
+  "dependencies": {
+    "offline-plugin": "^5.0.7"
+  },
+  "devDependencies": {
+    "coveralls": "^3.0.6",
+    "eslint": "^6.2.2",
+    "eslint-plugin-jest": "^22.15.2",
+    "jest": "^24.9.0",
+    "razzle": "^3.0.0"
+  }
+}
