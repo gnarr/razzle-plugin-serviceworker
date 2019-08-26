@@ -17,6 +17,7 @@
   },
   "keywords": [
     "razzle",
+    "plugin",
     "offline",
     "serviceworker",
     "service-worker"
