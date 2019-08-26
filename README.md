@@ -33,6 +33,7 @@ Edit or create `razzle.config.js` in your project root.
 module.exports = {
   plugins: ['serviceworker'],
 };
+```
 
 # License
 
