@@ -35,7 +35,7 @@
     "coveralls": "^3.0.6",
     "eslint": "^6.2.2",
     "eslint-plugin-jest": "^23.0.4",
-    "jest": "^25.1.0",
+    "jest": "^26.0.0",
     "razzle": "^3.0.0"
   }
 }
