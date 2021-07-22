@@ -34,7 +34,7 @@
   "devDependencies": {
     "coveralls": "^3.0.6",
     "eslint": "^6.2.2",
-    "eslint-plugin-jest": "^23.0.4",
+    "eslint-plugin-jest": "^24.4.0",
     "jest": "^25.1.0",
     "razzle": "^3.0.0"
   }
